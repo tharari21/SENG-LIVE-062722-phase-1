@@ -5,14 +5,10 @@
 - [ ]Explain the difference between:
     - [ ] Block scope
     - [ ] Function scope
-    - [ ]Global scope
+    - [ ] Global scope
 - [ ] Understand what it means that a function are first- class -objects
 - [ ] Explain what a higher-order function is
 - [ ] Grasp the relationship betweenDescribe what a callback and higher-order functions is
-
-<p align="center">
-    <img src="../assets/functions.jpeg" width="250" height="250">
-</p>
 
 
 ## Deliverables 
@@ -20,7 +16,6 @@
 Easley's Technical Books has asked us to build them an inventory management tool for their employees. 
 
 Today we will work on functions that may help us accomplish some tasks related to displaying data on the application. 
-
 
 The variable inventory is an array of book objects in index.js. Inventory[0] is the following book.
 ```
@@ -129,7 +124,7 @@ faveFood('cookies')
 
 Arrow functions also have the added benefit of passing context, but we won't be covering that today. 
 
-## Callbacks and HigherOrder Functions 
+## Callbacks and Higher Order Functions 
 
 Functions in JavaScript are treated like any other variable. When functions are treated like this, we refer to them as First class. One of the most significant benefits of this is that functions in JavaScript can be passed as arguments to other functions.
 
