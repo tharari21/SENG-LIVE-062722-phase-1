@@ -2,20 +2,19 @@
 ## SWBAT
 - [ ] Describe what functions are and their central importance in JS
 - [ ] Review syntax differences between regular functions and arrow functions
-- [ ]Explain the difference between:
+- [ ] Explain the difference between:
     - [ ] Block scope
     - [ ] Function scope
     - [ ] Global scope
-- [ ] Understand what it means that a function are first- class -objects
-- [ ] Explain what a higher-order function is
-- [ ] Grasp the relationship betweenDescribe what a callback and higher-order functions is
+- [ ] Understand what it means that functions are first-class objects
+- [ ] Explain what higher-order and callback functions are
 
 
 ## Deliverables 
 
 Easley's Technical Books has asked us to build them an inventory management tool for their employees. 
 
-Today we will work on functions that may help us accomplish some tasks related to displaying data on the application. 
+Today, we will work on functions that may help us accomplish some tasks related to displaying data on the application. 
 
 The variable inventory is an array of book objects in index.js. Inventory[0] is the following book.
 ```
