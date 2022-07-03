@@ -3,6 +3,27 @@ document.addEventListener("DOMContentLoaded", () => {
     bookStore.inventory.forEach(renderBookCard);
   };
 
+  const renderBookCard = (book) => {
+    const li = document.createElement("li");
+    const h3 = document.createElement("h3");
+    const pAuthor = document.createElement("p");
+    const pPrice = document.createElement("p");
+    const img = document.createElement("img");
+    const deleteBtn = document.createElement("button");
+
+    h3.textContent = book.title;
+    pAuthor.textContent = book.author;
+    pPrice.textContent = book.price;
+    deleteBtn.textContent = "DELETE";
+    deleteBtn.addEventListener("click", (event) =>
+      event.target.parentElement.remove()
+    );
+    img.src = book.imageUrl;
+    li.className = "list-li";
+
+    li.append(h3, pAuthor, pPrice, img, deleteBtn);
+    document.querySelector("#book-list").append(li);
+  };
   // Renders Header
   function renderHeader(bookStore) {
     document.querySelector("h1").textContent = bookStore.name;
@@ -22,29 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     renderFooter(bookStore);
     renderBookList(bookStore);
   };
-
-  function renderBookCard(cardData) {
-    const li = document.createElement("li");
-    const h3 = document.createElement("h3");
-    const pAuthor = document.createElement("p");
-    const pPrice = document.createElement("p");
-    const img = document.createElement("img");
-    const btn = document.createElement("button");
-
-    h3.textContent = cardData.title;
-    pAuthor.textContent = cardData.author;
-    pPrice.textContent = `$${cardData.price}`;
-    btn.textContent = "Delete";
-    btn.addEventListener("click", (event) => {
-      // li.remove();
-      event.target.parentElement.remove();
-    });
-    img.src = cardData.imageUrl;
-    li.className = "list-li";
-
-    li.append(h3, pAuthor, pPrice, img, btn);
-    document.querySelector("#book-list").append(li);
-  }
 
   let toggleSwitch = false;
   const switchStore = () => {
